@@ -1,0 +1,17 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.env
+Train.csv
+Test.csv
+models/*.pkl
+.ipynb_checkpoints/
+*.egg-info/
+dist/
+build/
+Train.csv
+Test.csv
+*.csv
+venv/
+Ressources/total*challenger*/TotalChallenge/challenge_22_data/

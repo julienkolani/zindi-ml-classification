@@ -1,0 +1,12 @@
+pandas
+deepdiff
+matplotlib
+numpy
+scikit-learn
+PyYAML
+pillow
+openai
+beautifulsoup4
+json5
+scipy
+jupyterlab
