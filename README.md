@@ -1,34 +1,24 @@
-# Zindi ML Classification Challenge
+# Zindi ML Classification
 
-A machine learning pipeline developed for a Zindi data science competition.
+Pipeline de machine learning développé pour une compétition Zindi de classification binaire.
 
-## Overview
+## Pipeline
 
-Implements a full preprocessing and model comparison workflow for binary classification. The pipeline covers binary column encoding, three categorical encoding strategies (One-Hot, Frequency, Target), correlation-based feature filtering, PCA dimensionality reduction (10 components), and evaluation of 8 classifiers with GridSearchCV hyperparameter tuning.
+1. **Prétraitement** : encodage binaire de 33 colonnes, 3 stratégies d'encodage catégoriel (One-Hot, Fréquence, Target encoding)
+2. **Sélection de features** : filtrage par corrélation (seuil 0,2), réduction dimensionnelle PCA (10 composantes)
+3. **Modèles évalués** : Régression Logistique, KNN, Arbre de Décision, Random Forest, Gradient Boosting, SVM, Naive Bayes, MLP
+4. **Optimisation** : GridSearchCV sur Random Forest avec validation croisée (cv=5)
+5. **Sauvegarde** : persistance du modèle avec joblib
 
-## Tech Stack
+## Stack technique
 
-- Python
-- scikit-learn
-- pandas, numpy
-- Jupyter Notebook
+- Python, scikit-learn, XGBoost, Pandas, NumPy, joblib
 
-## Classifiers Evaluated
+## Données
 
-- Logistic Regression
-- K-Nearest Neighbors
-- Decision Tree
-- Random Forest
-- Gradient Boosting
-- SVM
-- Naive Bayes
-- Neural Network (MLPClassifier)
+Les fichiers Train.csv (1,1 Go) et Test.csv (933 Mo) ne sont pas inclus en raison de leur taille.
 
-## Dataset
-
-Train.csv (1.1 GB) and Test.csv (933 MB) are excluded from this repository due to size. These are binary classification datasets used in the Zindi competition. A sample dataset (`show_dataset.csv`) is included for reference.
-
-## Setup
+## Installation
 
 ```bash
 pip install -r requirements.txt
